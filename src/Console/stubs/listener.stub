@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Orchid\Socket\BaseSocketListener;
+use Canaane\Socket\BaseSocketListener;
 use Ratchet\ConnectionInterface;
 
 class DummyClass extends BaseSocketListener

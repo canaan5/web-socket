@@ -1,6 +1,6 @@
 <?php
 
-namespace Orchid\Socket;
+namespace Canaane\Socket;
 
 use Ratchet\ConnectionInterface;
 use Ratchet\MessageComponentInterface;

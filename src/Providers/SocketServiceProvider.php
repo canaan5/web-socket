@@ -1,6 +1,6 @@
 <?php
 
-namespace Orchid\Socket\Providers;
+namespace Canaane\Socket\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -42,7 +42,7 @@ class SocketServiceProvider extends ServiceProvider
 
     public function registerProviders()
     {
-        $this->app->register('Orchid\\Socket\\Providers\\ConsoleServiceProvider');
+        $this->app->register('Canaane\\Socket\\Providers\\ConsoleServiceProvider');
     }
 
     /**
@@ -53,7 +53,7 @@ class SocketServiceProvider extends ServiceProvider
     public function provides()
     {
         return [
-            'Orchid\Socket\Providers\ConsoleServiceProvider',
+            'Canaane\Socket\Providers\ConsoleServiceProvider',
         ];
     }
 }

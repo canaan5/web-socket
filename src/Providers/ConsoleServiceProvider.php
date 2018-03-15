@@ -1,6 +1,6 @@
 <?php
 
-namespace Orchid\Socket\Providers;
+namespace Canaane\Socket\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class ConsoleServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Orchid\\Socket\\Console\\';
+    protected $namespace = 'Canaane\\Socket\\Console\\';
 
     /**
      * The available command shortname.

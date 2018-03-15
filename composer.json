@@ -1,5 +1,5 @@
 {
-  "name": "orchid/socket",
+  "name": "canaan/web-socket",
   "description": "Laravel library for asynchronously serving WebSockets. ",
   "keywords": [
     "framework",
@@ -13,23 +13,23 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "tabuna",
-      "email": "bliz48rus@gmail.com"
+      "name": "Canaan Etai",
+      "email": "me@canaane.com"
     }
   ],
   "require": {
-    "php": ">=5.5.9",
+    "php": ">=7.1.3",
     "cboden/ratchet": "^0.4"
   },
   "autoload": {
     "psr-4": {
-      "Orchid\\Socket\\": "src/"
+      "Canaane\\Socket\\": "src/"
     }
   },
   "extra": {
       "laravel": {
           "providers": [
-              "Orchid\\Socket\\Providers\\SocketServiceProvider"
+              "Canaane\\Socket\\Providers\\SocketServiceProvider"
           ]
       }
   },

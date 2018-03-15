@@ -1,6 +1,6 @@
 <?php
 
-namespace Orchid\Socket\Console;
+namespace Canaane\Socket\Console;
 
 use Illuminate\Console\GeneratorCommand;
 

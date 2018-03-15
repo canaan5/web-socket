@@ -4,6 +4,7 @@ namespace Canaane\Socket\Console;
 
 use Illuminate\Console\Command;
 use Ratchet\App as Socket;
+use App\Http\Sockets\Listener;
 use Ratchet\Server\IoServer;
 
 class Server extends Command

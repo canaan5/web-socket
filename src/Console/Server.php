@@ -4,6 +4,7 @@ namespace Canaane\Socket\Console;
 
 use Illuminate\Console\Command;
 use Ratchet\App as Socket;
+use Ratchet\Server\IoServer;
 
 class Server extends Command
 {
@@ -58,9 +59,13 @@ class Server extends Command
      */
     public function handle()
     {
-        $socket = new Socket($this->httpHost, $this->port, $this->address);
+        $socket = IoServer::factory(new Listener(), $this->port);
         require base_path('routes/socket.php');
         $this->info('Socket server started on '.$this->httpHost.':'.$this->port.'/'.'address:'.$this->address);
         $socket->run();
+//        $socket = new Socket($this->httpHost, $this->port, $this->address);
+//        require base_path('routes/socket.php');
+//        $this->info('Socket server started on '.$this->httpHost.':'.$this->port.'/'.'address:'.$this->address);
+//        $socket->run();
     }
 }
